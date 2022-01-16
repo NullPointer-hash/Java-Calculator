@@ -52,7 +52,7 @@ public class Window extends JFrame {
 	private JButton point = new JButton("."); 
 	private JButton equal = new JButton("="); 
 	private JButton[] operations = new JButton[4];
-	private CButton C = new CButton("C");
+	private JButton C = new JButton("C");
 	private JButton CA = new JButton("CA");
 	private JButton LP = new JButton("(");
 	private JButton RP = new JButton(")");
@@ -155,7 +155,7 @@ public class Window extends JFrame {
 			comp.setBorderPainted(false);
 		};
 		
-		//C.setFont(sizedFont);
+		C.setFont(sizedFont);
 		CA.setFont(sizedFont);
 		LP.setFont(sizedFont);
 		RP.setFont(sizedFont);
@@ -166,7 +166,7 @@ public class Window extends JFrame {
 		title.setFont(robotoBold23);
 		close.setFont(sizedFont);
 		
-		//C.setForeground(new Color(230,140,45));
+		C.setForeground(new Color(230,140,45));
 		CA.setForeground(new Color(140,230,45));
 		LP.setForeground(new Color(10,170,255));
 		RP.setForeground(new Color(10,170,255));
@@ -192,13 +192,13 @@ public class Window extends JFrame {
 		.setFnt(robotothin25)
 		.setFontColor(new Color(10,170,255));
 		
-		C.setColor(new Color(13,50,75))
+		/*C.setColor(new Color(13,50,75))
 		.setPressColor(new Color(13,65,85))
 		.setFnt(sizedFont)
-		.setFontColor(new Color(230,140,45));
+		.setFontColor(new Color(230,140,45));*/
 		
 		close.setSize(40, 40);
-		C.setSize(80, 40);
+		// C.setSize(80, 40);
 
 		
 		close.addActionListener(new ActionListener() {
