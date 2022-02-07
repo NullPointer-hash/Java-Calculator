@@ -1,4 +1,4 @@
-package com.main.sup;
+package com.main.classes;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -36,8 +36,8 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 
-import com.helpers.sup.CircleButton;
-import com.helpers.sup.Helper;
+import com.helpers.classes.CircleButton;
+import com.helpers.classes.Helper;
 
 public class Window extends JFrame {
 	
@@ -139,9 +139,9 @@ public class Window extends JFrame {
 		
 
 		InputStream is = Thread.currentThread().getContextClassLoader()
-				.getResourceAsStream("com/assets/sup/Roboto-Thin.ttf");
+				.getResourceAsStream("com/assets/fonts/Roboto-Thin.ttf");
 		InputStream is2 = Thread.currentThread().getContextClassLoader()
-				.getResourceAsStream("com/assets/sup/Roboto-Bold.ttf");
+				.getResourceAsStream("com/assets/fonts/Roboto-Bold.ttf");
 		Font font = Font.createFont(Font.TRUETYPE_FONT, is);
 		Font font2 = Font.createFont(Font.TRUETYPE_FONT, is2);
 		Font sizedFont = font.deriveFont(28f);

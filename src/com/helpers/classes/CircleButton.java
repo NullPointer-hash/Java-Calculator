@@ -1,4 +1,4 @@
-package com.helpers.sup;
+package com.helpers.classes;
 
 import javax.swing.JButton;
 import java.awt.Graphics;

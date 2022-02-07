@@ -1,4 +1,4 @@
-package com.main.sup;
+package com.main.classes;
 
 import java.awt.FontFormatException;
 import java.io.File;

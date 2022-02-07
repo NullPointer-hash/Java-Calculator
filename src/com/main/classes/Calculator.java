@@ -1,4 +1,4 @@
-package com.main.sup;
+package com.main.classes;
 
 public class Calculator {
 	
