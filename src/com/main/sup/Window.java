@@ -72,6 +72,8 @@ public class Window extends JFrame {
  	
  	private Graphics graphics;
  	
+ 	private Color accentColor = new Color(190,100,240);
+ 	
 	public Window() throws FontFormatException, IOException {
 		
 		restrict = new Runnable() {
@@ -106,8 +108,8 @@ public class Window extends JFrame {
 			public void paintComponent(Graphics g) {
 				Graphics2D g2d = (Graphics2D) g;
 		        g2d.setRenderingHint(RenderingHints.KEY_RENDERING, RenderingHints.VALUE_RENDER_QUALITY);
-		        Color color1 = new Color(13,40,65);
-		        Color color2 = new Color(10,20,45);
+		        Color color1 = new Color(23,5,45);
+		        Color color2 = new Color(20,5,25);
 		        GradientPaint gp = new GradientPaint(0,0, color1, 0, h, color2);
 		        g2d.setPaint(gp);
 		        g2d.fillRect(0, 0, w, h);
@@ -166,13 +168,13 @@ public class Window extends JFrame {
 		
 		C.setForeground(new Color(230,140,45));
 		CA.setForeground(new Color(140,230,45));
-		LP.setForeground(new Color(10,170,255));
-		RP.setForeground(new Color(10,170,255));
-		zero.setForeground(new Color(10,170,255));
-		point.setForeground(new Color(10,170,255));
-		equal.setForeground(new Color(10,170,255));
+		LP.setForeground(accentColor);
+		RP.setForeground(accentColor);
+		zero.setForeground(accentColor);
+		point.setForeground(accentColor);
+		equal.setForeground(accentColor);
 		resultField.setForeground(Color.WHITE);
-		resultField.setCaretColor(new Color(10,170,255));
+		resultField.setCaretColor(accentColor);
 		title.setForeground(Color.WHITE);
 		//close.setForeground(Color.WHITE);
 		
@@ -185,10 +187,10 @@ public class Window extends JFrame {
 		setTransparentBg.accept(equal);
 		setTransparentBg.accept(close);
 		resultField.setOpaque(false);
-		close.setColor(new Color(13,50,75))
-		.setPressColor(new Color(13,65,85))
+		close.setColor(new Color(33,20,55))
+		.setPressColor(new Color(33,20,65))
 		.setFnt(robotothin25)
-		.setFontColor(new Color(10,170,255));
+		.setFontColor(accentColor);
 		
 		/*C.setColor(new Color(13,50,75))
 		.setPressColor(new Color(13,65,85))
@@ -312,7 +314,7 @@ public class Window extends JFrame {
 			operations[i].setContentAreaFilled(false);
 			operations[i].setBorderPainted(false);
 			operations[i].setFont(sizedFont);
-			operations[i].setForeground(new Color(10,170,255));
+			operations[i].setForeground(accentColor);
 		}
 		
 		
@@ -347,7 +349,7 @@ public class Window extends JFrame {
 			if(i==2)
 				rows[i] = new JPanel() {
 					public void paintComponent(Graphics g) {
-						g.setColor(new Color(10,170,255));
+						g.setColor(accentColor);
 				        g.fillRect(0, 0, w, 1);
 					}
 				};
